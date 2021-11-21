@@ -26,6 +26,24 @@ The goal of this guide is show common commands with examples of managing your Ra
    - Check the status of the sync:
       
       `raptoreum-cli getblockchaininfo`
+      
+      Output Example:
+            
+         `{
+           "chain": "main",
+           "blocks": 189107,
+           "headers": 189117,
+           "bestblockhash": "3f3a4b9353053645047d6e8e6aa1187f95ef022aec459e9437a99051f5518cc8",
+           "difficulty": 5.451700650650667,
+           "mediantime": 1637483831,
+           "verificationprogress": 0.9998541222593257,
+           "chainwork": "0000000000000000000000000000000000000000000000000001360306533435",
+           "pruned": false,
+           "softforks": [
+           ],
+           "bip9_softforks": {
+           }
+         }`
 
       - When the `"blocks"` height is close to the current height of the [blockchain](https://explorer.raptoreum.com/) and `"verificationprogress"` is to close `1`, your wallet is in sync.
 
